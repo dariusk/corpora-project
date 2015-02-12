@@ -26,8 +26,7 @@ corpora.getFiles('animals'); // ["birds_antarctica", "birds_uk", "common", ...]
 corpora.getFile('animals', 'common');
 
 // returns this object:
-
-```json
+/*
 {
   "animals":
     [
@@ -38,6 +37,7 @@ corpora.getFile('animals', 'common');
       "zebra"
     ]
 }
+*/
 ```
 
 ## Contributing
