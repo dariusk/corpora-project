@@ -1,6 +1,6 @@
 # corpora-project
 
-A tool to grab the latest Corpora Project data locally and access it.
+A tool to grab the latest [Corpora Project](https://github.com/dariusk/corpora/) data locally and access it.
 
 ## Getting Started
 Install the module with: `npm install corpora-project`
