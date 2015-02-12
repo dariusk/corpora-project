@@ -1,7 +1,7 @@
 {
   "name": "corpora-project",
   "description": "A tool to grab the latest Corpora Project data locally and access it.",
-  "version": "0.1.0-4",
+  "version": "0.1.1-0",
   "homepage": "https://github.com/dkazemi/corpora-node",
   "author": {
     "name": "Kazemi, Darius",
