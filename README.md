@@ -11,7 +11,11 @@ corpora.getFile('animals', 'common');
 ```
 
 ## Documentation
-Using the module is pretty easy. If you want to access a corpora file called `nouns.json` in the `words` directory, just call `getCategories('words', 'nouns')`. In more detail:
+Using the module is pretty easy. If you want to access a corpora file called `nouns.json` in the `words` directory, just call `getCategories('words', 'nouns')`.
+
+See the [Corpora Project](https://github.com/dariusk/corpora/data) for a list of categories (directories) and files.
+
+In more detail:
 
 ```javascript
 var corpora = require('corpora-project');
