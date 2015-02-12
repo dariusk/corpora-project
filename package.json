@@ -1,0 +1,40 @@
+{
+  "name": "corpora-project",
+  "description": "A tool to grab the latest Corpora Project data locally and access it.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dkazemi/corpora-node",
+  "author": {
+    "name": "Kazemi, Darius",
+    "email": "darius.kazemi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dkazemi/corpora-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkazemi/corpora-node/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/dkazemi/corpora-node/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/corpora",
+  "engines": {
+    "node": "0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "corpora": "https://github.com/dariusk/corpora/archive/master.tar.gz"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.4"
+  },
+  "keywords": []
+}
