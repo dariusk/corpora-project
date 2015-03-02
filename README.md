@@ -20,11 +20,17 @@ In more detail:
 ```javascript
 var corpora = require('corpora-project');
 
-// List all corpora categories
+// List all corpora base directories
 corpora.getCategories(); // ["animals", "archetypes", ...]
 
-// List all files in a category
+// List all subdirectories in a directory
+corpora.getCategories('words'); // ["literature", "word_clues", ...]
+
+// List all files in a directory
 corpora.getFiles('animals'); // ["birds_antarctica", "birds_uk", "common", ...]
+
+// List all files in a subdirectory
+corpora.getFiles('words/word_clues'); // ["clues_five", "clues_four", ...]
 
 // Get the data from a file
 corpora.getFile('animals', 'common');
@@ -42,6 +48,9 @@ corpora.getFile('animals', 'common');
     ]
 }
 */
+
+// Get the data from a file in a subdirectory
+corpora.getFile('words/word_clues', 'clues_four');
 ```
 
 ## Contributing

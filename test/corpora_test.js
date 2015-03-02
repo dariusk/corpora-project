@@ -27,7 +27,7 @@ exports['awesome'] = {
     // setup here
     done();
   },
-  'tests': function(test) {
+  'basic tests': function(test) {
     test.expect(7);
     // tests here
     test.equal(typeof(corpora), 'object', 'should return an object');
@@ -41,4 +41,14 @@ exports['awesome'] = {
     test.equal(typeof(file), 'object', 'should return an object');
     test.done();
   },
+  'nested directory tests': function(test) {
+    test.expect(4);
+    test.ok(corpora.getCategories('words').length, 'should return an array (object w length)');
+    var files = corpora.getFiles('words/word_clues');
+    test.equal(typeof(files[0].name), 'string', 'should be a string');
+    test.equal(typeof(files[0].get), 'function', 'should have a `get` function');
+    var file = corpora.getFile('words/word_clues', 'clues_five');
+    test.equal(typeof(file), 'object', 'should return an object');
+    test.done();
+  }
 };
